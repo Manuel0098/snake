@@ -45,7 +45,8 @@
 #app {
   display: grid;
   grid-template: repeat(15, 1fr) / repeat(20, 1fr);
-  min-height: 520px;
+/*   min-height: 520px; */
+  max-height: 520px;
   border: 1px solid white;
   z-index: 1;
   transition: all 1000ms;
