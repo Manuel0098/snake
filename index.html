@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="src/assets/img/snake.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+  </head>
+  <body>
+    <div id="container">
+      <header id="header"> 
+        <div id="title">
+          <h1>Snake</h1>
+        </div>
+        <div id="box-buttons">
+          <button id="btn-new-game" class="btns" >
+            <p>Nuevo juego</p>
+          </button>
+          <button id="btn-start" class="btns" >
+            <p>Iniciar</p>
+          </button>
+          <button id="btn-pause" class="btns" >
+            <p>Terminar juego</p>
+          </button>
+        </div>
+      </header>
+        
+          <div id="empty-box"></div>
+            <div id="app">
+              <h2 class="comment">Perdiste</h2>
+              <h2 class="guide-comment">Gira el telefono</h2>
+            </div>
+
+          <div id="btns-control">
+            <button class="btns-tlfn arrow-up fa-solid fa-up-long"></button>
+
+            <button class="btns-tlfn arrow-left fa-solid fa-left-long"></button>
+
+            <button class="btns-tlfn arrow-right fa-solid fa-right-long"></button>
+
+            <button class="btns-tlfn arrow-down fa-solid fa-down-long"></button>
+          </div>
+
+          <!-- Le pone un sonido de crujido al comer la manzana -->
+            <audio id="sonido" autoplay>
+              <source src="./src/audio/pop.mp3" />
+            </audio>
+            <!-- Le pone una musica al dar iniciar al juego -->
+
+            <audio id="sound-game" autoplay >    <!--loop="loop"-->
+              <source src="./src/audio/perdiste.mp3" />
+            </audio>
+
+          <aside id="sidebar" ></aside>
+        
+      <footer id="footer">Todos los derechos reservados &copy; Manuel Rodriguez</footer>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
